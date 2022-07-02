@@ -1,0 +1,73 @@
+@media all and (min-width:769px) and (max-width:3000px){
+    .navbar{
+        grid-area: navbar;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0px 3px 0px 2px rgba(0,0,0,0.1), 0px 6px 0px 4px rgba(0,0,0,0.1), 0px 9px 0px 6px rgba(0,0,0,0.1), 0px 12px 0px 8px rgba(0,0,0,0.1), 0px 15px 0px 10px rgba(0,0,0,0.1), 0px 18px 0px 12px rgba(0,0,0,0.1), 0px 21px 0px 14px rgba(0,0,0,0.1), 0px 24px 0px 16px rgba(0,0,0,0.1), 0px 27px 0px 18px rgba(0,0,0,0.1), 0px 30px 0px 20px rgba(0,0,0,0.1), 5px 5px 15px 5px rgba(0,0,0,0);
+            ul{
+            list-style: none;
+            display: flex;
+                li{
+                padding: 10px;
+                background: linear-gradient(to right, #000000 0%, #D5DB0E 48%, #000000 100%);
+                margin: 10px;
+                border-radius: 40px 40px 0px 0px;
+                    a{
+                    color: rgb(248, 244, 244);
+                    text-decoration: none;
+                    text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #F00;
+                    }
+                }
+           }
+      }
+    }
+
+@media(max-width:768px){
+    .navbar{
+        grid-area: navbar;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+            ul{
+                list-style: none;
+                display: flex;
+                    li{
+                        padding: 10px;
+                        background-color: rgb(62, 56, 56);
+                        border: 3px inset yellow;
+                        margin: 10px;
+                        border-radius: 40px 40px 0px 0px;
+                            a{
+                            color: rgb(248, 244, 244);
+                            text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #F00;
+                            text-decoration: none;
+                            }
+                        }
+                    }
+                }
+}
+@media all and (max-width:576px){
+    .navbar{
+        grid-area: navbar;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+            ul{
+                list-style: none;
+                display: flex;
+                    li{
+                    padding: 10px;
+                    background-color: rgb(62, 56, 56);
+                    border: 3px inset yellow;
+                    margin: 10px;
+                    border-radius: 40px 40px 0px 0px;
+                        a{
+                        color: rgb(248, 244, 244);
+                        text-decoration: none;
+                        }
+                    }
+                }
+            }
+        }
+

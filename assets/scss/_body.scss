@@ -1,0 +1,509 @@
+@media all and (min-width:769px) and (max-width:3000px){
+    .padre{
+        background-image: url(/assets/images/fondo.png);
+        display: grid;
+        padding: 10px;
+        column-gap: 10px;
+        row-gap: 10px;
+        grid-template-columns: 320px 320px 320px 170px;
+        grid-template-rows: 100px 50px 50px 400px 400px 50px;
+        grid-template-areas:"logo logo logo logo"
+                            "navbar navbar navbar navbar"
+                            "titulo titulo titulo aside"
+                            "hayato miguel clu aside"
+                            "wukong luqueta moco aside"
+                            "footer footer footer footer";
+    }
+    h3{
+        color: beige;
+        text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #F00;
+    }
+    .logo{
+        grid-area: logo;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .logo img{
+        padding: 10px;
+        width: 100px;
+        height: 100px; 
+    }
+
+    .titulo{
+        grid-area: titulo;
+        color: rgb(255, 225, 0);        
+        text-shadow: 0 -1px 4px rgb(127, 12, 12), 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #F00;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation-name: titulo;
+        animation-duration: 7s;
+        animation-iteration-count: infinite;
+        animation-delay: 2s;
+    }
+    @keyframes titulo{
+        0%{transform: translate(-150px,0px);}
+        25%{transform: translate(150px,0px);}
+        50%{transform: translate(150px,0px);}
+        75%{transform: translate(-150px,0px);}
+        100%{transform: translate(-150px,0px);}
+    }
+    .hayato{
+        grid-area: hayato;
+        display: flex;
+        margin: 5px;
+        padding: 10px;
+        border: 3px inset rgb(232, 232, 225);
+        border-radius: 10px;
+        color: rgb(255, 225, 0);        
+        text-shadow: 0 -1px 4px rgb(127, 12, 12), 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #F00;
+        text-align: justify;
+        flex-direction: column;
+        align-items: center;
+        justify-content:space-around;
+        box-shadow: 0px 3px 0px 2px rgba(0,0,0,0.1), 0px 6px 0px 4px rgba(0,0,0,0.1), 0px 9px 0px 6px rgba(0,0,0,0.1), 0px 12px 0px 8px rgba(0,0,0,0.1), 0px 15px 0px 10px rgba(0,0,0,0.1), 0px 18px 0px 12px rgba(0,0,0,0.1), 0px 21px 0px 14px rgba(0,0,0,0.1), 0px 24px 0px 16px rgba(0,0,0,0.1), 0px 27px 0px 18px rgba(0,0,0,0.1), 0px 30px 0px 20px rgba(0,0,0,0.1), 5px 5px 15px 5px rgba(0,0,0,0);
+    }
+    .hayato img{
+        width: 200px;
+        height: 180px;
+        transition: 1s;
+        border-radius: 25px;
+    }
+    .hayato img:hover{
+        transform: scale(1.5);
+    }
+    .miguel{
+        grid-area: miguel;
+        display: flex;
+        margin: 5px;
+        padding: 10px;
+        border: 3px inset rgb(232, 232, 225);
+        border-radius: 10px;
+        color: rgb(255, 225, 0);        
+        text-shadow: 0 -1px 4px rgb(127, 12, 12), 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #F00;
+        text-align: justify;
+        flex-direction: column;
+        align-items: center;
+        justify-content:space-around;
+        box-shadow: 0px 3px 0px 2px rgba(0,0,0,0.1), 0px 6px 0px 4px rgba(0,0,0,0.1), 0px 9px 0px 6px rgba(0,0,0,0.1), 0px 12px 0px 8px rgba(0,0,0,0.1), 0px 15px 0px 10px rgba(0,0,0,0.1), 0px 18px 0px 12px rgba(0,0,0,0.1), 0px 21px 0px 14px rgba(0,0,0,0.1), 0px 24px 0px 16px rgba(0,0,0,0.1), 0px 27px 0px 18px rgba(0,0,0,0.1), 0px 30px 0px 20px rgba(0,0,0,0.1), 5px 5px 15px 5px rgba(0,0,0,0);
+    }
+    .miguel img{
+        width: 200px;
+        height: 180px;
+        transition: 1s;
+        border-radius: 25px;
+    }
+    .miguel img:hover{
+        transform: scale(1.5);
+    }
+    .clu{
+        grid-area: clu;
+        display: flex;
+        margin: 5px;
+        padding: 10px;
+        border: 3px inset rgb(232, 232, 225);
+        border-radius: 10px;
+        color: rgb(255, 225, 0);        
+        text-shadow: 0 -1px 4px rgb(127, 12, 12), 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #F00;
+        text-align: justify;
+        flex-direction: column;
+        align-items: center;
+        justify-content:space-around;
+        box-shadow: 0px 3px 0px 2px rgba(0,0,0,0.1), 0px 6px 0px 4px rgba(0,0,0,0.1), 0px 9px 0px 6px rgba(0,0,0,0.1), 0px 12px 0px 8px rgba(0,0,0,0.1), 0px 15px 0px 10px rgba(0,0,0,0.1), 0px 18px 0px 12px rgba(0,0,0,0.1), 0px 21px 0px 14px rgba(0,0,0,0.1), 0px 24px 0px 16px rgba(0,0,0,0.1), 0px 27px 0px 18px rgba(0,0,0,0.1), 0px 30px 0px 20px rgba(0,0,0,0.1), 5px 5px 15px 5px rgba(0,0,0,0);
+    }
+    .clu img{
+        width: 200px;
+        height: 180px;
+        transition: 1s;
+        border-radius: 25px;
+    }
+    .clu img:hover{
+        transform: scale(1.5);
+    }
+    .wukong{
+        grid-area: wukong;
+        display: flex;
+        margin: 5px;
+        padding: 10px;
+        border: 3px inset rgb(232, 232, 225);
+        border-radius: 10px;
+        color: rgb(255, 225, 0);        
+        text-shadow: 0 -1px 4px rgb(127, 12, 12), 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #F00;
+        text-align: justify;
+        flex-direction: column;
+        align-items: center;
+        justify-content:space-around;
+        box-shadow: 0px 3px 0px 2px rgba(0,0,0,0.1), 0px 6px 0px 4px rgba(0,0,0,0.1), 0px 9px 0px 6px rgba(0,0,0,0.1), 0px 12px 0px 8px rgba(0,0,0,0.1), 0px 15px 0px 10px rgba(0,0,0,0.1), 0px 18px 0px 12px rgba(0,0,0,0.1), 0px 21px 0px 14px rgba(0,0,0,0.1), 0px 24px 0px 16px rgba(0,0,0,0.1), 0px 27px 0px 18px rgba(0,0,0,0.1), 0px 30px 0px 20px rgba(0,0,0,0.1), 5px 5px 15px 5px rgba(0,0,0,0);
+    }
+    .wukong img{
+        width: 200px;
+        height: 180px;
+        transition: 1s;
+        border-radius: 25px;
+    }
+    .wukong img:hover{
+        transform: scale(1.5);
+    }
+    .luqueta{
+        grid-area: luqueta;
+        display: flex;
+        margin: 5px;
+        padding: 10px;
+        border: 3px inset rgb(232, 232, 225);
+        border-radius: 10px;
+        color: rgb(255, 225, 0);        
+        text-shadow: 0 -1px 4px rgb(127, 12, 12), 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #F00;
+        text-align: justify;
+        flex-direction: column;
+        align-items: center;
+        justify-content:space-around;
+        box-shadow: 0px 3px 0px 2px rgba(0,0,0,0.1), 0px 6px 0px 4px rgba(0,0,0,0.1), 0px 9px 0px 6px rgba(0,0,0,0.1), 0px 12px 0px 8px rgba(0,0,0,0.1), 0px 15px 0px 10px rgba(0,0,0,0.1), 0px 18px 0px 12px rgba(0,0,0,0.1), 0px 21px 0px 14px rgba(0,0,0,0.1), 0px 24px 0px 16px rgba(0,0,0,0.1), 0px 27px 0px 18px rgba(0,0,0,0.1), 0px 30px 0px 20px rgba(0,0,0,0.1), 5px 5px 15px 5px rgba(0,0,0,0);
+    }
+    .luqueta img{
+        width: 200px;
+        height: 180px;
+        transition: 1s;
+        border-radius: 25px;
+    }
+    .luqueta img:hover{
+        transform: scale(1.5);
+    }
+    .moco{
+        grid-area: moco;
+        display: flex;
+        margin: 5px;
+        padding: 10px;
+        border: 3px inset rgb(232, 232, 225);
+        border-radius: 10px;
+        color: rgb(255, 225, 0);        
+        text-shadow: 0 -1px 4px rgb(127, 12, 12), 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #F00;
+        text-align: justify;
+        flex-direction: column;
+        align-items: center;
+        justify-content:space-around;
+        box-shadow: 0px 3px 0px 2px rgba(0,0,0,0.1), 0px 6px 0px 4px rgba(0,0,0,0.1), 0px 9px 0px 6px rgba(0,0,0,0.1), 0px 12px 0px 8px rgba(0,0,0,0.1), 0px 15px 0px 10px rgba(0,0,0,0.1), 0px 18px 0px 12px rgba(0,0,0,0.1), 0px 21px 0px 14px rgba(0,0,0,0.1), 0px 24px 0px 16px rgba(0,0,0,0.1), 0px 27px 0px 18px rgba(0,0,0,0.1), 0px 30px 0px 20px rgba(0,0,0,0.1), 5px 5px 15px 5px rgba(0,0,0,0);
+    }
+    .moco img{
+        width: 160px;
+        height: 180px;
+        transition: 1s;
+        border-radius: 25px;
+    }
+    .moco img:hover{
+        transform: scale(1.5);
+    }
+}
+
+@media(max-width:768px){
+    .padre{
+        background-image: url(/assets/images/fondo2.png);
+        display: grid;
+        flex-wrap: wrap;
+        flex-direction: row;
+        column-gap: 1px;
+        row-gap: 5px;
+        grid-template-columns: 210px 210px 210px 130px;
+        grid-template-rows: 100px 50px 50px 400px 400px 50px;
+        grid-template-areas:"logo logo logo logo"
+                            "navbar navbar navbar navbar"
+                            "titulo titulo titulo aside"
+                            "hayato miguel clu aside"
+                            "wukong luqueta moco aside"
+                            "footer footer footer footer";
+    }
+    .logo{
+        grid-area: logo;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .logo img{
+        padding: 10px;
+        width: 100px;
+        height: 100px; 
+    }
+    .titulo{
+        grid-area: titulo;
+        color: rgb(255, 225, 0);
+        text-shadow: 0 -1px 4px rgb(127, 12, 12), 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #F00;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation-name: titulo;
+        animation-duration: 7s;
+        animation-iteration-count: infinite;
+        animation-delay: 2s;
+    }
+    .hayato{
+        font-size:13px;
+        grid-area: hayato;
+        display: flex;
+        margin: 5px;
+        padding: 10px;
+        border: 3px inset rgb(232, 232, 225);
+        border-radius: 10px;
+        color: rgb(255, 225, 0);
+        text-shadow: 0 -1px 4px rgb(127, 12, 12), 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #F00;
+        text-align: justify;
+        flex-direction: column;
+        align-items: center;
+        justify-content:space-around;
+    }
+    .hayato img{
+        width: 180px;
+        height: 180px;
+    }
+    .miguel{
+        font-size:13px;
+        grid-area: miguel;
+        display: flex;
+        margin: 5px;
+        padding: 10px;
+        border: 3px inset rgb(232, 232, 225);
+        border-radius: 10px;
+        color: rgb(255, 225, 0);
+        text-shadow: 0 -1px 4px rgb(127, 12, 12), 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #F00;
+        text-align: justify;
+        flex-direction: column;
+        align-items: center;
+        justify-content:space-around;
+    }
+    .miguel img{
+        width: 180px;
+        height: 180px;
+    }
+    .clu{
+        font-size:13px;
+        grid-area: clu;
+        display: flex;
+        margin: 5px;
+        padding: 10px;
+        border: 3px inset rgb(232, 232, 225);
+        border-radius: 10px;
+        color: rgb(255, 225, 0);
+        text-shadow: 0 -1px 4px rgb(127, 12, 12), 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #F00;
+        text-align: justify;
+        flex-direction: column;
+        align-items: center;
+        justify-content:space-around;
+    }
+    .clu img{
+        width: 180px;
+        height: 180px;
+    }
+    .wukong{
+        font-size:13px;
+        grid-area: wukong;
+        display: flex;
+        margin: 5px;
+        padding: 10px;
+        border: 3px inset rgb(232, 232, 225);
+        border-radius: 10px;
+        color: rgb(255, 225, 0);
+        text-shadow: 0 -1px 4px rgb(127, 12, 12), 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #F00;
+        text-align: justify;
+        flex-direction: column;
+        align-items: center;
+        justify-content:space-around;
+    }
+    .wukong img{
+        width: 180px;
+        height: 180px;
+    }
+    .luqueta{
+        font-size:13px;
+        grid-area: luqueta;
+        display: flex;
+        margin: 5px;
+        padding: 10px;
+        border: 3px inset rgb(232, 232, 225);
+        border-radius: 10px;
+        color: rgb(255, 225, 0);
+        text-shadow: 0 -1px 4px rgb(127, 12, 12), 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #F00;
+        text-align: justify;
+        flex-direction: column;
+        align-items: center;
+        justify-content:space-around;
+    }
+    .luqueta img{
+        width: 180px;
+        height: 180px;
+    }
+    .moco{
+        font-size:13px;
+        grid-area: moco;
+        display: flex;
+        margin: 5px;
+        padding: 10px;
+        border: 3px inset rgb(232, 232, 225);
+        border-radius: 10px;
+        color: rgb(255, 225, 0);
+        text-shadow: 0 -1px 4px rgb(127, 12, 12), 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #F00;
+        text-align: justify;
+        flex-direction: column;
+        align-items: center;
+        justify-content:space-around;
+    }
+    .moco img{
+        width: 180px;
+        height: 180px;
+    }
+}
+@media all and (max-width:576px){
+    .padre{
+        background-image: url(/assets/images/fondo3.png);
+        display: grid;
+        column-gap: 1px;
+        row-gap: 5px;
+        grid-template-columns: 230px 230px 100px;
+        grid-template-rows: 100px 50px 50px 400px 400px 400px 50px;
+        grid-template-areas:"logo logo logo"
+                            "navbar navbar navbar"
+                            "titulo titulo aside"
+                            "hayato miguel aside"
+                            "clu wukong aside"
+                            "luqueta moco aside"
+                            "footer footer footer";
+    }
+    h3{
+        color: rgb(0, 0, 0);
+    }
+    .logo{
+        grid-area: logo;
+        display: flex;
+        align-items: center;
+        justify-content: right;
+    }
+    .logo img{
+        padding: 10px;
+        width: 150px;
+        height: 150px; 
+    }
+    .titulo{
+        grid-area: titulo;
+        text-shadow: 0 -1px 4px rgb(127, 12, 12), 0 -2px 10px rgb(203, 203, 86), 0 -10px 20px #ff8000, 0 -18px 40px #F00;
+        color: rgb(10, 10, 8);        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation-name: titulo;
+        animation-duration: 7s;
+        animation-iteration-count: infinite;
+        animation-delay: 2s;
+    }
+    .hayato{
+        font-size:13px;
+        grid-area: hayato;
+        display: flex;
+        margin: 5px;
+        padding: 10px;
+        border: 3px inset rgb(232, 232, 225);
+        border-radius: 10px;
+        text-shadow: 0 -1px 4px rgb(127, 12, 12), 0 -2px 10px rgb(203, 203, 86), 0 -10px 20px #ff8000, 0 -18px 40px #F00;
+        color: rgb(10, 10, 8);        
+        text-align: justify;
+        flex-direction: column;
+        align-items: center;
+        justify-content:space-around;
+    }
+    .hayato img{
+        width: 180px;
+        height: 180px;
+    }
+    .miguel{
+        font-size:13px;
+        grid-area: miguel;
+        display: flex;
+        margin: 5px;
+        padding: 10px;
+        border: 3px inset rgb(232, 232, 225);
+        border-radius: 10px;
+        text-shadow: 0 -1px 4px rgb(127, 12, 12), 0 -2px 10px rgb(203, 203, 86), 0 -10px 20px #ff8000, 0 -18px 40px #F00;
+        color: rgb(10, 10, 8);        
+        text-align: justify;
+        flex-direction: column;
+        align-items: center;
+        justify-content:space-around;
+    }
+    .miguel img{
+        width: 180px;
+        height: 180px;
+    }
+    .clu{
+        font-size:13px;
+        grid-area: clu;
+        display: flex;
+        margin: 5px;
+        padding: 10px;
+        border: 3px inset rgb(232, 232, 225);
+        border-radius: 10px;
+        text-shadow: 0 -1px 4px rgb(127, 12, 12), 0 -2px 10px rgb(203, 203, 86), 0 -10px 20px #ff8000, 0 -18px 40px #F00;
+        color: rgb(10, 10, 8);        
+        text-align: justify;
+        flex-direction: column;
+        align-items: center;
+        justify-content:space-around;
+    }
+    .clu img{
+        width: 180px;
+        height: 180px;
+    }
+    .wukong{
+        font-size:13px;
+        grid-area: wukong;
+        display: flex;
+        margin: 5px;
+        padding: 10px;
+        border: 3px inset rgb(232, 232, 225);
+        border-radius: 10px;
+        text-shadow: 0 -1px 4px rgb(127, 12, 12), 0 -2px 10px rgb(203, 203, 86), 0 -10px 20px #ff8000, 0 -18px 40px #F00;
+        color: rgb(10, 10, 8);        
+        text-align: justify;
+        flex-direction: column;
+        align-items: center;
+        justify-content:space-around;
+    }
+    .wukong img{
+        width: 180px;
+        height: 180px;
+    }
+    .luqueta{
+        font-size:13px;
+        grid-area: luqueta;
+        display: flex;
+        margin: 5px;
+        padding: 10px;
+        border: 3px inset rgb(232, 232, 225);
+        border-radius: 10px;
+        text-shadow: 0 -1px 4px rgb(127, 12, 12), 0 -2px 10px rgb(203, 203, 86), 0 -10px 20px #ff8000, 0 -18px 40px #F00;
+        color: rgb(10, 10, 8);        
+        text-align: justify;
+        flex-direction: column;
+        align-items: center;
+        justify-content:space-around;
+    }
+    .luqueta img{
+        width: 180px;
+        height: 180px;
+    }
+    .moco{
+        font-size:13px;
+        grid-area: moco;
+        display: flex;
+        margin: 5px;
+        padding: 10px;
+        border: 3px inset rgb(232, 232, 225);
+        border-radius: 10px;
+        text-shadow: 0 -1px 4px rgb(127, 12, 12), 0 -2px 10px rgb(203, 203, 86), 0 -10px 20px #ff8000, 0 -18px 40px #F00;
+        color: rgb(10, 10, 8);        
+        text-align: justify;
+        flex-direction: column;
+        align-items: center;
+        justify-content:space-around;
+    }
+    .moco img{
+        width: 180px;
+        height: 180px;
+    }
+}    

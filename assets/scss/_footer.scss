@@ -1,0 +1,81 @@
+@media all and (min-width:769px) and (max-width:3000px){
+
+    footer.footer{
+        grid-area: footer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(to right, #000000 0%, #D5DB0E 48%, #000000 100%);
+        border: 3px inset yellow;
+        margin: 10px;
+        border-radius: 25px;
+        box-shadow: 0px 3px 0px 2px rgba(0,0,0,0.1), 0px 6px 0px 4px rgba(0,0,0,0.1), 0px 9px 0px 6px rgba(0,0,0,0.1), 0px 12px 0px 8px rgba(0,0,0,0.1), 0px 15px 0px 10px rgba(0,0,0,0.1), 0px 18px 0px 12px rgba(0,0,0,0.1), 0px 21px 0px 14px rgba(0,0,0,0.1), 0px 24px 0px 16px rgba(0,0,0,0.1), 0px 27px 0px 18px rgba(0,0,0,0.1), 0px 30px 0px 20px rgba(0,0,0,0.1), 5px 5px 15px 5px rgba(0,0,0,0);
+        column-gap: 10px;
+    }
+    .footer img{
+        width: 20px;
+        height: 20px;
+    }
+    .redes{
+        display: flex;
+        flex-direction: row;
+        justify-items: right;
+        margin: 10px;
+        column-gap: 10px;
+    }
+}
+
+@media(max-width:768px){
+    footer.footer{
+        grid-area: footer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(to right, #000000 0%, #D5DB0E 48%, #000000 100%);
+        border: 3px inset yellow;
+        margin: 10px;
+        border-radius: 25px;
+        box-shadow: 0px 3px 0px 2px rgba(0,0,0,0.1), 0px 6px 0px 4px rgba(0,0,0,0.1), 0px 9px 0px 6px rgba(0,0,0,0.1), 0px 12px 0px 8px rgba(0,0,0,0.1), 0px 15px 0px 10px rgba(0,0,0,0.1), 0px 18px 0px 12px rgba(0,0,0,0.1), 0px 21px 0px 14px rgba(0,0,0,0.1), 0px 24px 0px 16px rgba(0,0,0,0.1), 0px 27px 0px 18px rgba(0,0,0,0.1), 0px 30px 0px 20px rgba(0,0,0,0.1), 5px 5px 15px 5px rgba(0,0,0,0);
+    }
+    .footer img{
+        width: 20px;
+        height: 20px;
+    }
+    .redes{
+        display: flex;
+        flex-direction: row;
+        justify-items: right;
+        margin: 10px;
+        column-gap: 10px;
+    }
+}
+
+
+@media all and (max-width:576px){
+    .footer{
+        grid-area: footer;
+        padding: 10px;
+        background-color: rgb(62, 56, 56);
+        border: 3px inset yellow;
+        margin: 10px;
+        border-radius: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .footer img{
+        width: 10px;
+        height: 10px;
+    }
+    .footer h3{
+        font-size: 10px;
+        color: azure;
+    }
+    .redes{
+        display: flex;
+        flex-direction: row;
+        justify-items: right;
+        margin: 10px;
+        column-gap: 10px;
+    }
+}
